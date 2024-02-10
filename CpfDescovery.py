@@ -212,7 +212,7 @@ elif opção == 'm':
     print(f'Todos os {number} CPFs foram encontrados e escritos em "cpf-miner.txt"')
             
 
-elif opção != 'c':
+elif opção == 'c':
     print('Descubra qual é o CPF completo a partir de um incompleto. Digite "?" para os dígitos que não sabe.\n')
     while True:
         cpf = input('> ')
