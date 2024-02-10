@@ -268,10 +268,10 @@ elif opção == 'c':
         print('Nenhum CPF foi encontrado.')
         
     elif len(results) <= 10:
-        print(f'Foram encontrados esses CPFs:')
+        print(f'Foram encontrados esses CPFs:\n')
         
         for e, i in enumerate(results):
-            print(f'{e}- {i}')
+            print(f'{e + 1}- {i}')
             
     elif len(results) > 10:
         with open('cpf.txt', 'w') as cpf_txt:
